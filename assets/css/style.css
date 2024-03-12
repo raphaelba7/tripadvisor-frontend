@@ -1,0 +1,153 @@
+/* REGLES GENERALE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: TS-Reg, sans-serif;
+  background-color: white;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+p {
+  height: 22px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-style: bold;
+  font-size: 54px;
+  text-align: start;
+  padding-top: 50px;
+  font-family: TS-med;
+}
+
+h2 {
+  font-size: 30px;
+  font-style: bold;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: bold;
+  height: 22px;
+}
+
+/* ----------- HEADER -----------*/
+
+header div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-bottom: 30px;
+  height: 100px;
+  border-bottom: 1px solid #ff5d5d;
+}
+header nav {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+header img {
+  width: 12rem;
+  max-width: 15rem;
+}
+
+#buttonLogin {
+  border: 0;
+  font-size: 1rem;
+  line-height: 2;
+  border-radius: 17px;
+  text-align: center;
+  background-color: black;
+  color: #efefef;
+}
+#buttonLogin:hover {
+  opacity: 0.5;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+header nav a:hover {
+  background-color: #f2f2f2;
+  border-radius: 17px;
+}
+
+/* ----------- MAIN -----------*/
+
+main div h1 > span {
+  color: #ff5d5d;
+}
+
+main div section p > a {
+  color: #333;
+}
+
+main div p {
+  color: #333;
+}
+
+main nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+main nav > a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 4rem;
+  width: 16%;
+}
+
+main nav > a:hover {
+  background-color: black;
+  color: white;
+}
+
+div.photo {
+  padding-top: 10px;
+  display: flex;
+  object-fit: cover;
+  justify-content: space-between;
+}
+
+div.photo-bis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grande-photo {
+  width: 625px;
+}
+
+.petite-photo {
+  width: 400px;
+}
