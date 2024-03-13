@@ -15,20 +15,23 @@
     <header>
       <div id="navbar" class="container">
         <a href="#"
-          ><img src="./assets/img/TripAdvisor-Logo.png" alt="Logo TripAdvisor"
+          ><img src="./assets/img/Tripadvisor_logo.svg" alt="Logo TripAdvisor"
         /></a>
         <!-- <input type="search" id="site-search" name="q" /> -->
-        <nav>
-          <a href="#"><i class="fa-solid fa-pencil"></i> Avis</a>
-          <a href="#"><i class="fa-regular fa-heart"></i> Voyages</a>
-          <a href="#"><i class="fa-regular fa-bell"></i> Alertes</a>
-          <button type="button" id="buttonLogin">Connectez-vous</button>
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i> Panier</a>
-        </nav>
+        <div class="test">
+          <nav>
+            <a href="#"><i class="fa-solid fa-pencil"></i> Avis</a>
+            <a href="#"><i class="fa-regular fa-heart"></i> Voyages</a>
+            <a href="#"><i class="fa-regular fa-bell"></i> Alertes</a>
+            <button type="button" id="buttonLogin">Connectez-vous</button>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Panier</a>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
       <div class="container">
+        <!----------- 1ère partie ----------->
         <section>
           <h1><span>Explorez</span> Paris</h1>
           <p>
@@ -55,48 +58,94 @@
               ><span>Plus </span><i class="fa-solid fa-ellipsis"></i
             ></a>
           </nav>
-          <div class="photo">
-            <div>
-              <img
-                src="./assets/img/paris_grand.jpeg"
-                alt="Grande photo"
-                class="grande-photo"
-              />
-            </div>
-            <div class="photo-bis">
-              <img
-                src="./assets/img/paris_petit_babos.jpeg"
-                alt="Petite photo 1"
-                class="petite-photo"
-              />
-              <img
-                src="./assets/img/paris_tour.jpeg"
-                alt="Petite photo 2"
-                class="petite-photo"
-              />
-            </div>
+        </section>
+
+        <section class="photo">
+          <div class="left-bloc">
+            <img
+              src="./assets/img/paris_grand.jpeg"
+              alt="Grande photo"
+              class="grande-photo"
+            />
           </div>
-          <ul>
-            <li><a href="">Europe</a></li>
-            <li><a href="">France</a></li>
-            <li><a href="">Ile-de-France</a></li>
-            <li><a href="">Paris</a></li>
+          <div class="right-bloc">
+            <img
+              src="./assets/img/paris_petit_babos.jpeg"
+              alt="Petite photo 1"
+              class="petite-photo"
+            />
+            <img
+              src="./assets/img/paris_tour.jpeg"
+              alt="Petite photo 2"
+              class="petite-photo"
+            />
+          </div>
+        </section>
+        <div class="menu-photo">
+          <ul class="menu-photo">
+            <li><a href="#">Europe > </a></li>
+            <li><a href="#">France > </a></li>
+            <li><a href="#">Ile-de-France > </a></li>
+            <li>
+              <a href="">Paris <i class="fa-solid fa-heart"></i> </a>
+            </li>
           </ul>
-          <div>
-            <div>
-              <h2></h2>
-              <p></p>
+          <i>Visiter : Paris</i>
+        </div>
+        <!----------- 2eme partie ----------->
+        <section class="second-section">
+          <div class="flex">
+            <div class="column1">
+              <h2>La Ville Lumière éblouit en tous points</h2>
+              <p>
+                Aucun autre endroit au monde ne fait autant rêver que Paris. La
+                ville séduit par son art, son architecture, sa culture et sa
+                cuisine, mais il y a aussi des merveilles plus discrètes qui
+                n’attendent qu’à être explorées : les ruelles pavées
+                pittoresques, les pâtisseries au coin de la rue et les petits
+                bistrots douillets qui vous invitent à boire un verre de
+                beaujolais. Préparez-vous à vous approprier Paris.
+              </p>
             </div>
-            <div>
-              <h3></h3>
-              <p></p>
-              <button></button>
-              <img src="" alt="Image avec bouton" />
+            <div class="column2">
+              <div class="text-desc">
+                <h3>Paris : commencez à organiser !</h3>
+                <p>
+                  Créez un voyage pour enregistrer et organiser toutes vos idées
+                  et les visualiser sur une carte.
+                </p>
+                <button id="buttonTravel">Créez un voyage</button>
+              </div>
+              <div class="div-img">
+                <img
+                  src="./assets/img/maps_cnuhsr.png"
+                  alt="Image google map"
+                />
+              </div>
             </div>
           </div>
         </section>
+        <!----------- 3eme partie ----------->
+        <section class="third-section">
+          <h3>Paris : les immanquables</h3>
+          <div class="container">
+            <div class="col-1">
+              <h4>Se divertir</h4>
+              <p>Des lieux à voir, des rues à explorer et des expériences emblématiques à Paris.</p>
+              <a href="#">Tout afficher</a>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+          <p>
+            TripAdvisor @ 2024 - Site développé à Le Reacteur par Raphaël Basset
+          </p>
+        </div>
+    </footer>
   </body>
 </html>

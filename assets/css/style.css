@@ -20,7 +20,7 @@ p {
 }
 
 h1 {
-  font-style: bold;
+  font-weight: bold;
   font-size: 54px;
   text-align: start;
   padding-top: 50px;
@@ -28,39 +28,45 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
-  font-style: bold;
-  margin-top: 70px;
-  margin-bottom: 20px;
+  /*font-weight: bold; */
+  font-size: 28px;
+  margin-top: 20px;
+  font-family: TS-med;
 }
 
 h3 {
-  font-size: 18px;
-  font-style: bold;
+  font-size: 32px;
+  font-weight: bold;
   height: 22px;
+  font-family: TS-med;
+}
+
+h4 {
+  font-size: 24px;
+  height: 22px;
+  font-family: TS-med;
 }
 
 /* ----------- HEADER -----------*/
 
-header div {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 header {
   position: sticky;
   top: 0;
   background-color: white;
-  padding-bottom: 30px;
-  height: 100px;
+  height: 80px;
   border-bottom: 1px solid #ff5d5d;
 }
-header nav {
+header > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+header div.test > nav {
   display: flex;
   width: 500px;
   justify-content: space-between;
-  align-items: center;
 }
 
 header a {
@@ -70,8 +76,8 @@ header a {
 }
 
 header img {
-  width: 12rem;
-  max-width: 15rem;
+  height: 60px;
+  object-fit: contain;
 }
 
 #buttonLogin {
@@ -94,7 +100,20 @@ header nav a:hover {
   border-radius: 17px;
 }
 
+/* ------ FOOTER ------ */
+
+footer div.footer {
+  margin-top: 2rem;
+  padding-top: 10px;
+  height: 50px;
+  background-color: #f2f2f2;
+}
+footer p {
+  text-align: center;
+}
+
 /* ----------- MAIN -----------*/
+/* ------ frist part ------ */
 
 main div h1 > span {
   color: #ff5d5d;
@@ -106,6 +125,7 @@ main div section p > a {
 
 main div p {
   color: #333;
+  padding-top: 5px;
 }
 
 main nav {
@@ -131,23 +151,162 @@ main nav > a:hover {
   color: white;
 }
 
-div.photo {
-  padding-top: 10px;
+section.photo {
+  padding-top: 20px;
   display: flex;
   object-fit: cover;
-  justify-content: space-between;
+  gap: 5px;
+}
+div.left-bloc {
+  display: flex;
 }
 
-div.photo-bis {
+div.right-bloc {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  object-fit: cover;
+  gap: 5px;
 }
 
 .grande-photo {
-  width: 625px;
+  width: 100%;
+  height: 100%;
 }
 
 .petite-photo {
-  width: 400px;
+  width: 450px;
+  height: 100%;
+}
+div.menu-photo {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+div.menu-photo i {
+  font-size: 12px;
+}
+ul.menu-photo {
+  display: flex;
+  align-items: baseline;
+  font-size: 12px;
+}
+ul.menu-photo li > a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* ------ second part ------ */
+.second-section {
+  padding-top: 20px;
+}
+
+#buttonTravel {
+  border: 0;
+  font-size: 1rem;
+  line-height: 2;
+  border-radius: 17px;
+  text-align: center;
+  background-color: black;
+  color: #efefef;
+}
+#buttonTravel:hover {
+  opacity: 0.5;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+div.flex {
+  display: flex;
+  object-fit: cover;
+}
+
+div.column1 {
+  display: block;
+  height: auto;
+  width: 70%;
+}
+
+div.column1 h2 {
+  height: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+div.column1 p {
+  text-align: start;
+  margin-right: 70px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+div.column2 {
+  width: 428px;
+  height: 100%;
+  background-color: #ff5d5d;
+  border-radius: 10px;
+}
+
+div.column2 div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 200px;
+}
+
+div.column2 div.text-desc {
+  height: 282px;
+  width: 425px;
+  padding: 32px;
+  justify-content: start;
+}
+
+div.column2 p {
+  padding-top: 20px;
+  line-height: 20px;
+}
+
+div.column2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
+}
+
+/* ------ Third part ------ */
+section.third-section {
+  margin-top: 50px;
+}
+
+section.third-section h3 {
+  margin-bottom: 30px;
+}
+
+section.third-section > div.container {
+  display: flex;
+}
+
+div.col-1 {
+  width: 295px;
+  height: 325px;
+  border: 1px solid black;
+}
+
+div.col-1 p {
+  text-align: start;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+div.col-1 a {
+  text-align: start;
+  color: #333;
+}
+
+div.col-2 {
+  border: 1px solid black;
+  height: auto;
+  width: 100%;
 }
