@@ -1,61 +1,83 @@
-/* REGLES GENERALE */
+/* --------------------------------------------- */
+/* ------------------- GENERAL ----------------- */
+/* --------------------------------------------- */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: TS-Reg, sans-serif;
-  background-color: white;
 }
 
 .container {
-  width: 1024px;
+  max-width: 1135px;
   margin: 0 auto;
-}
-
-p {
-  height: 22px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 54px;
+  font-size: 3.3rem;
   text-align: start;
-  padding-top: 50px;
   font-family: TS-med;
+}
+
+h1 > span {
+  color: #ff5d5d;
 }
 
 h2 {
   /*font-weight: bold; */
-  font-size: 28px;
+  font-size: 1.75rem;
   margin-top: 20px;
   font-family: TS-med;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
-  height: 22px;
   font-family: TS-med;
 }
 
 h4 {
-  font-size: 24px;
-  height: 22px;
+  font-size: 1.5rem;
+  font-family: TS-med;
+}
+h5 {
+  font-size: 1.12rem;
+  font-family: TS-med;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  border: none;
+  padding: 12px 15px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
   font-family: TS-med;
 }
 
-/* ----------- HEADER -----------*/
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 
+/* --------------------------------------------- */
+/* ------------------- HEADER ------------------ */
+/* --------------------------------------------- */
 header {
   position: sticky;
+  z-index: 1000;
   top: 0;
   background-color: white;
   height: 80px;
   border-bottom: 1px solid #ff5d5d;
 }
+
 header > div {
   width: 100%;
   display: flex;
@@ -63,250 +85,390 @@ header > div {
   height: 100%;
   align-items: center;
 }
-header div.test > nav {
+
+div#navbar nav {
   display: flex;
-  width: 500px;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 header a {
   text-decoration: none;
   color: black;
-  padding: 5px;
 }
 
 header img {
-  height: 60px;
+  height: 100%;
   object-fit: contain;
-}
-
-#buttonLogin {
-  border: 0;
-  font-size: 1rem;
-  line-height: 2;
-  border-radius: 17px;
-  text-align: center;
-  background-color: black;
-  color: #efefef;
-}
-#buttonLogin:hover {
-  opacity: 0.5;
-  border-radius: 17px;
-  cursor: pointer;
 }
 
 header nav a:hover {
   background-color: #f2f2f2;
   border-radius: 17px;
 }
-
-/* ------ FOOTER ------ */
-
-footer div.footer {
-  margin-top: 2rem;
-  padding-top: 10px;
-  height: 50px;
-  background-color: #f2f2f2;
+/* Icones / link nav for responsive */
+.burger-menu {
+  display: none;
 }
-footer p {
-  text-align: center;
+i.icon-search {
+  display: none;
 }
 
-/* ----------- MAIN -----------*/
-/* ------ frist part ------ */
-
-main div h1 > span {
-  color: #ff5d5d;
+main nav a:nth-child(6),
+main nav a:nth-child(7) {
+  display: none;
 }
 
-main div section p > a {
-  color: #333;
+/* --------------------------------------------- */
+/* -------------------- MAIN ------------------- */
+/* --------------------------------------------- */
+/* -- img rules for all content --*/
+img {
+  overflow: hidden;
 }
 
-main div p {
-  color: #333;
-  padding-top: 5px;
-}
-
-main nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-main nav > a {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-decoration: none;
-  padding: 5px;
-  color: black;
-  border: 1px solid black;
-  border-radius: 10px;
-  height: 4rem;
-  width: 16%;
-}
-
-main nav > a:hover {
-  background-color: black;
-  color: white;
-}
-
-section.photo {
-  padding-top: 20px;
-  display: flex;
-  object-fit: cover;
-  gap: 5px;
-}
-div.left-bloc {
-  display: flex;
-}
-
-div.right-bloc {
-  display: flex;
-  flex-direction: column;
-  object-fit: cover;
-  gap: 5px;
-}
-
-.grande-photo {
-  width: 100%;
-  height: 100%;
-}
-
-.petite-photo {
-  width: 450px;
-  height: 100%;
-}
-div.menu-photo {
-  padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-div.menu-photo i {
-  font-size: 12px;
-}
-ul.menu-photo {
-  display: flex;
-  align-items: baseline;
-  font-size: 12px;
-}
-ul.menu-photo li > a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* ------ second part ------ */
-.second-section {
-  padding-top: 20px;
-}
-
-#buttonTravel {
-  border: 0;
-  font-size: 1rem;
-  line-height: 2;
-  border-radius: 17px;
-  text-align: center;
-  background-color: black;
-  color: #efefef;
-}
-#buttonTravel:hover {
-  opacity: 0.5;
-  border-radius: 17px;
+img.img-hover:hover {
+  filter: opacity(0.5);
   cursor: pointer;
 }
 
-div.flex {
+/* -- First title with small text -- */
+
+main p:first-of-type {
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+main a:first-of-type {
+  color: #333;
+}
+
+/* -- Second Nav in main -- */
+main nav {
   display: flex;
+  gap: 10px;
+}
+
+main nav > div {
+  font-family: TS-med;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-right: 5px;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: calc((100% - 50px) / 6);
+}
+.naviguation-menu > div:nth-child(n + 7) {
+  display: none;
+}
+
+main nav > div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-filter {
+  margin-bottom: 20px;
+}
+/* --------------------------------------------- */
+/* --------- FIRST PART with the 3 img --------- */
+/* --------------------------------------------- */
+.pictures {
+  height: 430px;
+  margin-top: 26px;
+  display: flex;
+  gap: 2px;
+}
+.pictures img {
+  object-fit: cover;
+}
+.pictures > .left-bloc {
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.pictures > .left-bloc > div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 8px;
+  bottom: 16px;
+  left: 16px;
+  border-radius: 30px;
+  gap: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+.pictures > .left-bloc > div:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.pictures > .right-bloc img {
+  height: 100%;
+  width: 100%;
+}
+
+.pictures > .right-bloc {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
   object-fit: cover;
 }
 
-div.column1 {
-  display: block;
-  height: auto;
-  width: 70%;
+.pictures > .right-bloc img {
+  height: calc(50% - 1px);
 }
 
-div.column1 h2 {
+.pictures > .right-bloc img:last-child {
+  margin-top: 2px;
+}
+
+/* -- Menu under the 3 img -- */
+.menu-picture {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-picture > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 12px;
+}
+
+.menu-picture div:nth-child(1) span:hover {
+  text-decoration: underline;
+  color: #717171;
+  cursor: pointer;
+}
+
+.menu-picture div:nth-child(1) i:last-child:hover {
+  color: #717171;
+  cursor: pointer;
+}
+/* --------------------------------------------- */
+/* ----------------- SECOND PART --------------- */
+/* --------------------------------------------- */
+.second-section {
+  padding-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1 {
+  padding-right: 150px;
+  width: 60%;
+}
+
+.column1 h2 {
   height: 30px;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
-div.column1 p {
-  text-align: start;
+.column1 p {
+  text-align: justify;
   margin-right: 70px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 25px;
 }
 
-div.column2 {
-  width: 428px;
-  height: 100%;
-  background-color: #ff5d5d;
-  border-radius: 10px;
-}
-
-div.column2 div {
+.column2 {
+  width: 40%;
+  border-radius: 15px;
+  overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  height: 200px;
+  flex-direction: column;
 }
 
-div.column2 div.text-desc {
-  height: 282px;
-  width: 425px;
-  padding: 32px;
-  justify-content: start;
+.column2 div.text-desc {
+  background-color: #ff5d5d;
+  padding: 30px;
+  gap: 30px;
 }
 
-div.column2 p {
+.column2 p {
   padding-top: 20px;
   line-height: 20px;
 }
 
-div.column2 img {
-  height: 100%;
-  width: 100%;
+.column2 div.div-img {
+  height: 190px;
   object-fit: cover;
-  border-radius: 0 0 10px 10px;
+  background-image: url("../img/maps_cnuhsr.png");
+  background-position: center;
+  background-size: cover;
 }
-
-/* ------ Third part ------ */
-section.third-section {
-  margin-top: 50px;
+/* --------------------------------------------- */
+/* --------- THIRD PART with carrousel --------- */
+/* --------------------------------------------- */
+.third-section {
+  margin-bottom: 100px;
 }
 
 section.third-section h3 {
   margin-bottom: 30px;
 }
 
-section.third-section > div.container {
+.third-section-main {
   display: flex;
+  margin-bottom: 80px;
 }
 
-div.col-1 {
-  width: 295px;
-  height: 325px;
-  border: 1px solid black;
+.third-desc {
+  flex: 1;
+  padding: 10px;
 }
 
-div.col-1 p {
-  text-align: start;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+.third-carrousel {
+  flex: 3;
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+.third-carrousel > div {
+  width: calc((100% - 30px) / 3);
+  flex-shrink: 0;
+  padding-bottom: 20px;
+}
+
+.third-carrousel > div:hover > h5 {
+  text-decoration: underline;
+}
+
+.relativ-div {
+  position: relative;
+}
+
+.third-carrousel > div img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.circle {
+  background-color: white;
+  border: 8px solid white;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 210px;
+}
+
+.rating > i {
+  color: #04aa6c;
+}
+
+/* icone TripAdvisor */
+.ta2 {
+  background-color: #36e1a1;
+  border-radius: 20px 20px 6px 6px;
+  width: 30px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+  left: 3%;
+}
+
+.icon-travelers_choice_badge {
+  font-size: 30px;
+}
+
+.ta2 > span {
+  font-family: TS-med;
+  font-size: 10px;
+}
+
+/* --------------------------------------------- */
+/* -------- THOURTH PART with carrousel -------- */
+/* --------------------------------------------- */
+.fourth-section {
+  margin-bottom: 100px;
+}
+.fourth-carrousel {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+.col-carrousel {
+  flex-shrink: 0;
+  width: calc((100% - 30px) / 3);
+}
+.col-carrousel > img {
+  aspect-ratio: 35/25;
+  width: 100%;
+  object-fit: cover;
+}
+
+.col-carrousel h5 {
   font-size: 18px;
 }
 
-div.col-1 a {
-  text-align: start;
-  color: #333;
+.col-carrousel p {
+  font-size: 14px;
+}
+.by-flex span {
+  font-size: 14px;
+}
+.by-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-div.col-2 {
-  border: 1px solid black;
-  height: auto;
-  width: 100%;
+.by-flex > img {
+  border-radius: 100%;
+  height: 40px;
 }
+
+/* --------------------------------------------- */
+/* ------------------- FOOTER ------------------ */
+/* --------------------------------------------- */
+footer {
+  height: 120px;
+  background-color: #faf1ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-family: TS-med;
+  font-weight: bold;
+}
+
+footer img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+footer a > img:hover {
+  rotate: 180deg;
+  cursor: help;
+}
+
+/* --------------------------------------------- */
+/* ----------------- RESPONSIVE ---------------- */
+/* --------------------------------------------- */
