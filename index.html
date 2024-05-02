@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="shortcut icon" href="./assets/img/favicon-tripadvisor.svg">
-   <!-- <script src="./assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script> -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>TripAdvisor 🌈</title>
   </head>
   <body>
@@ -365,5 +365,48 @@
           <p> &nbsp Made at <a href="https://www.lereacteur.io/?utm_source=google&utm_medium=cpc&utm_campaign=FR-SN-Brand&utm_term=le%20reacteur&utm_content=679341333814&gad_source=1&gclid=Cj0KCQjwwMqvBhCtARIsAIXsZpZK09WHjR2ap8etFaGVwVFKq8V1K3prlUSIc3j9eSI5iSOMJzaKdd0aApzVEALw_wcB">Le Reacteur</a> By <a href="https://github.com/raphaelba7">Raphaël Basset</a>
           </p>
     </footer>
+
+        <!-- ----- MODAL ----- -->
+        <div class="modal hidden">
+          <div class="form-container">
+            <div>
+              <i class="icon-times"></i>
+              <p>Formulaire de contact</p>
+    
+              <form id="contact-form">
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Prénom"
+                  autocomplete="off"
+                />
+    
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Nom"
+                />
+    
+                <input type="email" name="email" id="email" placeholder="Email" />
+    
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  cols="50"
+                  placeholder="Écrivez ici votre message..."
+                ></textarea>
+    
+                <input
+                  type="submit"
+                  value="Envoyer le formulaire"
+                  id="submit-btn"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
   </body>
 </html>
